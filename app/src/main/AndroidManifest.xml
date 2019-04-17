@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Item_Acitivity"></activity>
+        <activity android:name=".practice_part1"></activity>
+        <activity android:name=".Activity.Item_Acitivity" />
         <activity android:name=".activity_listening" />
         <activity
             android:name=".MainActivity"

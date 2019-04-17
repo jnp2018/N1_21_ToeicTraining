@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.pr.Activity.Item_Acitivity;
 import com.example.pr.Item;
@@ -45,7 +46,18 @@ public class RecyclerViewListeningAdapter extends RecyclerView.Adapter<RecycleVi
         myViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(mContext, "position "+i, Toast.LENGTH_SHORT).show();
+                switch (i) {
+                    case 0:
+                        
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                }
             }
         });
     }

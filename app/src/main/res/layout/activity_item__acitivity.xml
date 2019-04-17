@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.Item_Acitivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorYellow">
 
 
         <android.support.v7.widget.RecyclerView
