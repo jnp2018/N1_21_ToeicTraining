@@ -11,13 +11,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.pr.Activity.Item_Acitivity;
+import com.example.pr.Activity.item_r_acitvity;
 import com.example.pr.Item;
 import com.example.pr.R;
 
 import java.util.List;
 
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.MyViewHolder> {
-
 
     private Context mContext;
     private List<Item> mData;
@@ -46,9 +46,23 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         myViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, Item_Acitivity.class);
-                intent.putExtra("title", mData.get(i).getTitle());
-                mContext.startActivity(intent);
+                switch (i) {
+                    case  0:
+                        break;
+                    case 1:
+                        Intent intent = new Intent(mContext, Item_Acitivity.class);
+                        intent.putExtra("title", mData.get(i).getTitle());
+                        mContext.startActivity(intent);
+                        break;
+                    case 2:
+                        Intent intent2 = new Intent(mContext, item_r_acitvity.class);
+                        intent2.putExtra("title", mData.get(i).getTitle());
+                        mContext.startActivity(intent2);
+                        break;
+                    case 3:
+                        break;
+                }
+
             }
         });
     }
