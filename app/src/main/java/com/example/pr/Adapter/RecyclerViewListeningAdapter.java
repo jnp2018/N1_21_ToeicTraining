@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.pr.Activity.Item_Acitivity;
+import com.example.pr.Activity.List_Question;
 import com.example.pr.Item;
 import com.example.pr.R;
 
@@ -49,7 +50,9 @@ public class RecyclerViewListeningAdapter extends RecyclerView.Adapter<RecycleVi
                 Toast.makeText(mContext, "position "+i, Toast.LENGTH_SHORT).show();
                 switch (i) {
                     case 0:
-                        
+                        Intent intent = new Intent(mContext, List_Question.class);
+                        intent.putExtra("title", mData.get(i).getTitle());
+                        mContext.startActivity(intent);
                         break;
                     case 1:
                         break;

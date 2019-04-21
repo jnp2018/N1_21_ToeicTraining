@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".practice_part1"></activity>
         <activity android:name=".Activity.Item_Acitivity" />
+        <activity android:name=".Activity.List_Question" />
         <activity android:name=".activity_listening" />
         <activity
             android:name=".MainActivity"
