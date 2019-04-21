@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".practice_part1"></activity>
+        <activity android:name=".practice_part5"></activity>
+        <activity android:name=".Activity.item_r_acitvity" />
+        <activity android:name=".Adapter.RecyclerViewReadingAdapter" />
+        <activity android:name=".practice_part1" />
         <activity android:name=".Activity.Item_Acitivity" />
         <activity android:name=".Activity.List_Question" />
         <activity android:name=".activity_listening" />

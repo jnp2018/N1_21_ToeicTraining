@@ -6,14 +6,14 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
-import com.example.pr.Adapter.RecyclerViewListeningAdapter;
+import com.example.pr.Adapter.RecyclerViewReadingAdapter;
 import com.example.pr.Item;
 import com.example.pr.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Item_Acitivity extends AppCompatActivity {
+public class item_r_acitvity extends AppCompatActivity {
 
     private TextView tv_title;
     List<Item> listItem;
@@ -21,7 +21,7 @@ public class Item_Acitivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item__acitivity);
+        setContentView(R.layout.activity_item_r_acitvity);
         init();
 
 
@@ -36,13 +36,12 @@ public class Item_Acitivity extends AppCompatActivity {
 
     private void init() {
         listItem = new ArrayList<>();
-        listItem.add(new Item("Part 1: Photo", R.drawable.ic_part1));
-        listItem.add(new Item("Part 2: Question Respone", R.drawable.ic_part3));
-        listItem.add(new Item("Part 3: Short conversation", R.drawable.ic_part3));
-        listItem.add(new Item("Part4: Short talk", R.drawable.ic_part1));
+        listItem.add(new Item("Part 5: Answer question", R.drawable.ic_part1));
+        listItem.add(new Item("Part 6: Question Respone", R.drawable.ic_part3));
+        listItem.add(new Item("Part 7: Short conversation", R.drawable.ic_part3));
 
         RecyclerView myrv  = (RecyclerView) findViewById(R.id.recycleview_id);
-        RecyclerViewListeningAdapter myAdapter = new RecyclerViewListeningAdapter(this, listItem);
+        RecyclerViewReadingAdapter myAdapter = new RecyclerViewReadingAdapter(this, listItem);
 
         myrv.setLayoutManager(new GridLayoutManager(this, 1));
         myrv.setAdapter(myAdapter);

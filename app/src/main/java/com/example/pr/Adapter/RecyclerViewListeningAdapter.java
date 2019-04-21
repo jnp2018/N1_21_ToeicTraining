@@ -11,10 +11,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.pr.Activity.Item_Acitivity;
 import com.example.pr.Activity.List_Question;
 import com.example.pr.Item;
 import com.example.pr.R;
+import com.example.pr.practice_part1;
 
 import java.util.List;
 
@@ -55,6 +57,8 @@ public class RecyclerViewListeningAdapter extends RecyclerView.Adapter<RecycleVi
                         mContext.startActivity(intent);
                         break;
                     case 1:
+                        Intent intent = new Intent(mContext, practice_part1.class);
+                        mContext.startActivity(intent);
                         break;
                     case 2:
                         break;
